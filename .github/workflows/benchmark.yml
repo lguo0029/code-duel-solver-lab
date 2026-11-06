@@ -1,0 +1,29 @@
+name: Manual benchmark
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Number of distinct four-digit secrets (10000 = exhaustive)'
+        default: '1000'
+        required: true
+permissions:
+  contents: read
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e ".[dev]"
+      - name: Run benchmark
+        env:
+          BENCH_COUNT: ${{ inputs.count }}
+        run: python -m code_duel.simulation --count "$BENCH_COUNT" --seeds 42 --output benchmarks/results/manual
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: benchmark-results
+          path: benchmarks/results/manual

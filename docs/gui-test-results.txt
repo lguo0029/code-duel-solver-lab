@@ -1,0 +1,1 @@
+PASS: English/Chinese setup and gameplay, real worker rounds, history, draw, reset, close; manual contradiction/correction and length 10

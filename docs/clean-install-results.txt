@@ -1,0 +1,31 @@
+test_conflicting_feedback_keeps_pending (test_game.EngineTests.test_conflicting_feedback_keeps_pending) ... ok
+test_fixed_hidden_pending_and_reset (test_game.EngineTests.test_fixed_hidden_pending_and_reset) ... ok
+test_manual_feedback_and_atomic_correction (test_game.EngineTests.test_manual_feedback_and_atomic_correction) ... ok
+test_outcomes_and_end_guard (test_game.EngineTests.test_outcomes_and_end_guard) ... ok
+test_constraint_search_proves_empty (test_game.LengthTests.test_constraint_search_proves_empty) ... ok
+test_every_length_and_difficulty (test_game.LengthTests.test_every_length_and_difficulty) ... ok
+test_invalid_lengths_and_scores (test_game.LengthTests.test_invalid_lengths_and_scores) ... ok
+test_long_contradiction_exact_check (test_game.LengthTests.test_long_contradiction_exact_check) ... ok
+test_examples (test_game.RulesTests.test_examples) ... ok
+test_invalid (test_game.RulesTests.test_invalid) ... ok
+test_universe (test_game.RulesTests.test_universe) ... ok
+test_contradiction_does_not_commit (test_game.SolverTests.test_contradiction_does_not_commit) ... ok
+test_transactional_impossible_feedback (test_game.SolverTests.test_transactional_impossible_feedback) ... ok
+test_truth_survives_random_histories (test_game.SolverTests.test_truth_survives_random_histories) ... ok
+test_zero_and_multiple_history (test_game.SolverTests.test_zero_and_multiple_history) ... ok
+test_all_difficulties_legal_and_converge (test_game.StrategyTests.test_all_difficulties_legal_and_converge) ... ok
+test_revalidate_corrupted_candidates (test_game.StrategyTests.test_revalidate_corrupted_candidates) ... ok
+test_secret_is_not_in_interface (test_game.StrategyTests.test_secret_is_not_in_interface) ... ok
+test_simulation_reproducible (test_game.StrategyTests.test_simulation_reproducible) ... ok
+test_singleton_and_empty (test_game.StrategyTests.test_singleton_and_empty) ... ok
+test_cross_check_against_complete_enumeration (test_validation.ConstraintTests.test_cross_check_against_complete_enumeration) ... ok
+test_deadline_zero_is_unknown (test_validation.ConstraintTests.test_deadline_zero_is_unknown) ... ok
+test_explicit_unknown_and_transactional_recovery (test_validation.ConstraintTests.test_explicit_unknown_and_transactional_recovery) ... ok
+test_long_truthful_histories_and_proven_unsat (test_validation.ConstraintTests.test_long_truthful_histories_and_proven_unsat) ... ok
+test_witness_then_budget_is_consistent (test_validation.ConstraintTests.test_witness_then_budget_is_consistent) ... ok
+test_all_strings_have_both_languages (test_validation.LocalizationTests.test_all_strings_have_both_languages) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 3.643s
+
+OK
